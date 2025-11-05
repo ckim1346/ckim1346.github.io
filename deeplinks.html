@@ -8,17 +8,14 @@
 <a href="intent://FRGF77fBAeM/#Intent;scheme=vnd.youtube;package=com.google.android.youtube.tv;S.browser_fallback_url=market://details?id=com.google.android.youtube.tv;end;">Another YT video</a>
 <br><br>
 <br>
-<a href="nflx://www.netflix.com/watch/81403033">A netflix video with nflx:// scheme</a>
+<a href="intent://81403033/#Intent;scheme=https;package=com.netflix.ninja;end;">An invalid Netflix link without fallback</a>
+<br>
+<a href="intent://81403033/#Intent;scheme=android.intent;package=com.netflix.ninja;S.browser_fallback_url=market://details?id=com.netflix.ninja;end;">An invalid Netflix link (falls back to Play Store)</a>
+<br>
+<a href="nflx://www.netflix.com/watch/81403033">A Netflix video with nflx:// scheme</a>
 <br>  
-<a href="intent://www.netflix.com/watch/81403033#Intent;scheme=https;package=com.netflix.ninja;S.browser_fallback_url=market://details?id=com.netflix.mediaclient;end;">A hopefully correctly formatted Netflix link</a>
+<a href="intent://www.netflix.com/watch/81403033#Intent;scheme=https;package=com.netflix.ninja;S.browser_fallback_url=market://details?id=com.netflix.mediaclient;end;">A Netflix video with intent://www.netflix.com https scheme</a>
 <br>
-<a href="intent://81403033/#Intent;scheme=android.intent;package=com.netflix.ninja;S.browser_fallback_url=market://details?id=com.netflix.ninja;end;">A netflix video in the App (fixed fallback)</a>
-<br>
-<a href="intent://81403033/#Intent;scheme=https;package=com.netflix.ninja;S.browser_fallback_url=market://details?id=com.netflix.mediaclient;end;">A netflix video in the App, scheme:https</a>
-<br>
-<a href="intent://81403033/#Intent;scheme=https;package=com.netflix.ninja;end;">A netflix video in the App, scheme:https, no fallback to market</a>
-<br>
-<a href="intent://browse?source_type=13/#Intent;scheme=https;package=com.netflix.ninja;end;">A netflix video in the App, scheme:https, no fallback to market, URI including browse</a>
 
 <hr>
 Moar deep links and funny URIs:
