@@ -1,0 +1,40 @@
+<html><head></head><body>Deep links demos:
+<br>
+<a href="intent://VI0YaqL68Ik/#Intent;scheme=vnd.youtube;package=com.google.android.youtube;S.browser_fallback_url=market://details?id=com.google.android.youtube;end">One YT video</a>
+<!-- S.android.intent.extra.TEXT=LEVITYCREATIVE/VI0YaqL68Ik -->
+<br><br>
+<a href="intent://blabla/#Intent;scheme=vnd.youtube;package=com.google.android.youtube;S.browser_fallback_url=market://details?id=com.google.android.youtube;end">A nonexistent YT video</a>
+<br><br>
+<a href="intent://FRGF77fBAeM/#Intent;scheme=vnd.youtube;package=com.google.android.youtube;S.browser_fallback_url=market://details?id=com.google.android.youtube;end;">Another YT video</a>
+<br><br>
+<br>
+<a href="intent://81403033/#Intent;scheme=android.intent;package=com.netflix.ninja;S.browser_fallback_url=market://details?id=com.netflix.mediaclient;end;">A netflix video in the App</a>
+<br>
+<a href="intent://81403033/#Intent;scheme=https;package=com.netflix.ninja;S.browser_fallback_url=market://details?id=com.netflix.mediaclient;end;">A netflix video in the App, scheme:https</a>
+<br>
+<a href="intent://81403033/#Intent;scheme=https;package=com.netflix.ninja;end;">A netflix video in the App, scheme:https, no fallback to market</a>
+<br>
+<a href="intent://browse?source_type=13/#Intent;scheme=https;package=com.netflix.ninja;end;">A netflix video in the App, scheme:https, no fallback to market, URI including browse</a>
+
+<hr>
+Moar deep links and funny URIs:
+<br>
+
+<a href="intent://scan/#Intent;scheme=zxing;package=com.google.zxing.client.android;end">intent://scan/#Intent;scheme=zxing;package=com.google.zxing.client.android;end</a><br>
+<br>
+<a href="intent://news.bbc.co.uk/#Intent;scheme=http;action=android.intent.action.SEND;end">intent://news.bbc.co.uk/#Intent;scheme=http;action=android.intent.action.SEND;end</a><br>
+<br>
+<a href="twitter://user?screen_name=pyf_codes">twitter://user?screen_name=pyf_codes</a><br>
+<br>
+<a href="fb://profile/me">fb://profile/me</a><br>
+<br>
+<a href="intent://fb/#Intent;scheme=fb;package=com.facebook.katana;end">intent://fb/#Intent;scheme=fb;package=com.facebook.katana;end -- just open FB</a><br>
+<br>
+<a href="intent://publish/profile/me/#Intent;scheme=fb;package=com.facebook.katana;S.text=http%3A%2F%2Fwww.pyf.fr%2F;end">intent://publish/profile/me/#Intent;scheme=fb;package=com.facebook.katana;S.text=http%3A%2F%2Fwww.pyf.fr%2F;end --  publish on app</a><br>
+<br>
+<a href="fb://publish/profile/me?text=http%3A%2F%2Fwww.pyf.fr%2F">fb://publish/profile/me?text=http%3A%2F%2Fwww.pyf.fr%2F -- publish on app (2)</a><br>
+<br>
+<a href="intent://friends/#Intent;scheme=fb;package=com.facebook.katana;end">intent://friends/#Intent;scheme=fb;package=com.facebook.katana;end -- open friends on app</a><br>
+<br>
+<a href="mailto:myemail@mydomain.com?subject=Pyf%20code&amp;body=http%3A%2F%2Fwww.pyf.fr%2F">mailto:myemail@mydomain.com?subject=Pyf%20code&amp;body=http%3A%2F%2Fwww.pyf.fr%2F -- Send email</a>
+</body></html>
