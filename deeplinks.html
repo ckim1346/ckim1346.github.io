@@ -12,7 +12,7 @@
 </head>
 <body>
     <h1>Deep Link Examples</h1>
-    <p style="color: #888;">Revision: 5</p>
+    <p style="color: #888;">Revision: 6</p>
 
     <h2>YouTube (com.google.android.youtube.tv)</h2>
     <a href="intent:#Intent;action=android.intent.action.MAIN;category=android.intent.category.LAUNCHER;package=com.google.android.youtube.tv;end">Valid YT app link</a>
@@ -44,7 +44,7 @@
     <a href="intent://youtubekids.com/video/blabla/#Intent;scheme=https;package=com.google.android.youtube.tvkids;end">Valid YouTube Kids link with nonexistent video</a>
 
     <h2>Netflix (com.netflix.ninja)</h2>
-    <a href="nflx://">Valid Netflix app link</a>
+    <a href="nflx://www.netflix.com">Valid Netflix app link</a>
     <a href="nflx://www.netflix.com/watch/81403033">Valid Netflix link to specific show (nflx://)</a>
     <a href="intent://www.netflix.com/watch/81403033#Intent;scheme=https;package=com.netflix.ninja;S.browser_fallback_url=market://details?id=com.netflix.mediaclient;end;">Alternate: Valid Netflix link to specific show (intent://)</a>
     <a href="intent://81403033/#Intent;scheme=https;package=com.netflix.ninja;end;" class="invalid">Invalid Netflix link without fallback</a>
@@ -61,7 +61,7 @@
     <a href="intent:#Intent;action=android.intent.action.MAIN;category=android.intent.category.LAUNCHER;package=com.spotify.tv.android;end">Alternate: Valid Spotify app link (intent://)</a>
 
     <h2>Apple TV (com.apple.atve.androidtv.appletv)</h2>
-    <a href="intent:#Intent;action=android.intent.action.MAIN;category=android.intent.category.LEANBACK_LAUNCHER;package=com.apple.atve.androidtv.appletv;end">Valid Apple TV app link</a>
+    <a href="intent://tv.apple.com/#Intent;scheme=https;package=com.apple.atve.androidtv.appletv;end">Valid Apple TV app link (https)</a>
     <a href="intent://tv.apple.com/show/ted-lasso/umc.cmc.vsnwffk55e61wty5sh7t0a5a#Intent;scheme=https;package=com.apple.atve.androidtv.appletv;end">Valid Apple TV link to show</a>
     <a href="intent://invalid/#Intent;package=com.apple.atve.androidtv.appletv;end" class="invalid">Invalid Apple TV link without fallback</a>
     <a href="intent://invalid/#Intent;package=com.apple.atve.androidtv.appletv;S.browser_fallback_url=market://details?id=com.apple.atve.androidtv.appletv;end" class="fallback">Invalid Apple TV link WITH Play Store fallback</a>
@@ -69,7 +69,7 @@
 
     <h2>Prime Video (com.amazon.amazonvideo.livingroom)</h2>
     <a href="intent:#Intent;action=android.intent.action.MAIN;category=android.intent.category.LEANBACK_LAUNCHER;package=com.amazon.amazonvideo.livingroom;end">Valid Prime Video app link</a>
-    <a href="intent://www.primevideo.com/detail/B08K1N1S11/#Intent;scheme=https;package=com.amazon.amazonvideo.livingroom;end">Valid Prime Video link to video</a>
+    <a href="intent://app.primevideo.com/detail?asin=B08K1N1S11#Intent;scheme=https;package=com.amazon.amazonvideo.livingroom;end">Valid Prime Video link to video (https)</a>
     <a href="intent://invalid/#Intent;package=com.amazon.amazonvideo.livingroom;end" class="invalid">Invalid Prime Video link without fallback</a>
     <a href="intent://invalid/#Intent;package=com.amazon.amazonvideo.livingroom;S.browser_fallback_url=market://details?id=com.amazon.amazonvideo.livingroom;end" class="fallback">Invalid Prime Video link WITH Play Store fallback</a>
     <a href="intent://www.primevideo.com/detail/nonexistent/#Intent;scheme=https;package=com.amazon.amazonvideo.livingroom;end">Valid Prime Video link with nonexistent video</a>
@@ -97,6 +97,7 @@
 
 </body>
 </html>
+
 
 
 
