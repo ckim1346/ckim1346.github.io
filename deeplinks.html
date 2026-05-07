@@ -14,29 +14,29 @@
     <h1>Deep Link Examples</h1>
 
     <h2>YouTube (com.google.android.youtube.tv)</h2>
-    <a href="intent://#Intent;package=com.google.android.youtube.tv;end">Valid YT app link</a>
+    <a href="intent:#Intent;action=android.intent.action.MAIN;category=android.intent.category.LAUNCHER;package=com.google.android.youtube.tv;end">Valid YT app link</a>
     <a href="intent://VI0YaqL68Ik/#Intent;scheme=vnd.youtube;package=com.google.android.youtube.tv;S.browser_fallback_url=market://details?id=com.google.android.youtube.tv;end">Valid YT link to specific video</a>
-    <a href="intent://invalid/#Intent;scheme=vnd.youtube;package=com.google.android.youtube.tv;end" class="invalid">Invalid YT link without fallback</a>
-    <a href="intent://invalid/#Intent;scheme=vnd.youtube;package=com.google.android.youtube.tv;S.browser_fallback_url=market://details?id=com.google.android.youtube.tv;end" class="fallback">Invalid YT link WITH Play Store fallback</a>
+    <a href="intent://invalid/#Intent;scheme=vnd.nonexistent;package=com.google.android.youtube.tv;end" class="invalid">Invalid YT link without fallback</a>
+    <a href="intent://invalid/#Intent;scheme=vnd.nonexistent;package=com.google.android.youtube.tv;S.browser_fallback_url=market://details?id=com.google.android.youtube.tv;end" class="fallback">Invalid YT link WITH Play Store fallback</a>
     <a href="intent://blabla/#Intent;scheme=vnd.youtube;package=com.google.android.youtube.tv;S.browser_fallback_url=market://details?id=com.google.android.youtube.tv;end">Valid YT link with nonexistent video</a>
     <a href="vnd.youtube:VI0YaqL68Ik">Alternate: YT video with vnd.youtube: scheme</a>
 
     <h2>YouTube TV (com.google.android.apps.youtube.unplugged)</h2>
-    <a href="intent://#Intent;package=com.google.android.apps.youtube.unplugged;end">Valid YouTube TV app link</a>
+    <a href="intent:#Intent;action=android.intent.action.MAIN;category=android.intent.category.LAUNCHER;package=com.google.android.apps.youtube.unplugged;end">Valid YouTube TV app link</a>
     <a href="intent://VI0YaqL68Ik/#Intent;scheme=vnd.youtube;package=com.google.android.apps.youtube.unplugged;end">Valid YouTube TV link to specific video</a>
     <a href="intent://invalid/#Intent;package=com.google.android.apps.youtube.unplugged;end" class="invalid">Invalid YouTube TV link without fallback</a>
     <a href="intent://invalid/#Intent;package=com.google.android.apps.youtube.unplugged;S.browser_fallback_url=market://details?id=com.google.android.apps.youtube.unplugged;end" class="fallback">Invalid YouTube TV link WITH Play Store fallback</a>
     <a href="intent://blabla/#Intent;scheme=vnd.youtube;package=com.google.android.apps.youtube.unplugged;end">Valid YouTube TV link with nonexistent video</a>
 
     <h2>YouTube Music (com.google.android.youtube.tvmusic)</h2>
-    <a href="intent://#Intent;package=com.google.android.youtube.tvmusic;end">Valid YouTube Music app link</a>
+    <a href="intent:#Intent;action=android.intent.action.MAIN;category=android.intent.category.LAUNCHER;package=com.google.android.youtube.tvmusic;end">Valid YouTube Music app link</a>
     <a href="intent://VI0YaqL68Ik/#Intent;scheme=vnd.youtube;package=com.google.android.youtube.tvmusic;end">Valid YouTube Music link to specific video</a>
     <a href="intent://invalid/#Intent;package=com.google.android.youtube.tvmusic;end" class="invalid">Invalid YouTube Music link without fallback</a>
     <a href="intent://invalid/#Intent;package=com.google.android.youtube.tvmusic;S.browser_fallback_url=market://details?id=com.google.android.youtube.tvmusic;end" class="fallback">Invalid YouTube Music link WITH Play Store fallback</a>
     <a href="intent://blabla/#Intent;scheme=vnd.youtube;package=com.google.android.youtube.tvmusic;end">Valid YouTube Music link with nonexistent video</a>
 
     <h2>YouTube Kids (com.google.android.youtube.tvkids)</h2>
-    <a href="intent://#Intent;package=com.google.android.youtube.tvkids;end">Valid YouTube Kids app link</a>
+    <a href="intent:#Intent;action=android.intent.action.MAIN;category=android.intent.category.LAUNCHER;package=com.google.android.youtube.tvkids;end">Valid YouTube Kids app link</a>
     <a href="intent://VI0YaqL68Ik/#Intent;scheme=vnd.youtube;package=com.google.android.youtube.tvkids;end">Valid YouTube Kids link to specific video</a>
     <a href="intent://invalid/#Intent;package=com.google.android.youtube.tvkids;end" class="invalid">Invalid YouTube Kids link without fallback</a>
     <a href="intent://invalid/#Intent;package=com.google.android.youtube.tvkids;S.browser_fallback_url=market://details?id=com.google.android.youtube.tvkids;end" class="fallback">Invalid YouTube Kids link WITH Play Store fallback</a>
@@ -59,35 +59,35 @@
     <a href="intent://#Intent;package=com.spotify.tv.android;end">Alternate: Valid Spotify app link (intent://)</a>
 
     <h2>Apple TV (com.apple.atve.androidtv.appletv)</h2>
-    <a href="intent://#Intent;package=com.apple.atve.androidtv.appletv;end">Valid Apple TV app link</a>
+    <a href="intent:#Intent;action=android.intent.action.MAIN;category=android.intent.category.LAUNCHER;package=com.apple.atve.androidtv.appletv;end">Valid Apple TV app link</a>
     <a href="intent://tv.apple.com/show/ted-lasso/umc.cmc.vsnwffk55e61wty5sh7t0a5a#Intent;scheme=https;package=com.apple.atve.androidtv.appletv;end">Valid Apple TV link to show</a>
     <a href="intent://invalid/#Intent;package=com.apple.atve.androidtv.appletv;end" class="invalid">Invalid Apple TV link without fallback</a>
     <a href="intent://invalid/#Intent;package=com.apple.atve.androidtv.appletv;S.browser_fallback_url=market://details?id=com.apple.atve.androidtv.appletv;end" class="fallback">Invalid Apple TV link WITH Play Store fallback</a>
     <a href="intent://tv.apple.com/show/nonexistent/umc.cmc.nonexistent#Intent;scheme=https;package=com.apple.atve.androidtv.appletv;end">Valid Apple TV link with nonexistent show</a>
 
     <h2>Prime Video (com.amazon.amazonvideo.livingroom)</h2>
-    <a href="intent://#Intent;package=com.amazon.amazonvideo.livingroom;end">Valid Prime Video app link</a>
+    <a href="intent:#Intent;action=android.intent.action.MAIN;category=android.intent.category.LAUNCHER;package=com.amazon.amazonvideo.livingroom;end">Valid Prime Video app link</a>
     <a href="intent://www.primevideo.com/detail/B08K1N1S11/#Intent;scheme=https;package=com.amazon.amazonvideo.livingroom;end">Valid Prime Video link to video</a>
     <a href="intent://invalid/#Intent;package=com.amazon.amazonvideo.livingroom;end" class="invalid">Invalid Prime Video link without fallback</a>
     <a href="intent://invalid/#Intent;package=com.amazon.amazonvideo.livingroom;S.browser_fallback_url=market://details?id=com.amazon.amazonvideo.livingroom;end" class="fallback">Invalid Prime Video link WITH Play Store fallback</a>
     <a href="intent://www.primevideo.com/detail/nonexistent/#Intent;scheme=https;package=com.amazon.amazonvideo.livingroom;end">Valid Prime Video link with nonexistent video</a>
 
     <h2>Disney+ (com.disney.disneyplus)</h2>
-    <a href="intent://#Intent;package=com.disney.disneyplus;end">Valid Disney+ app link</a>
+    <a href="intent:#Intent;action=android.intent.action.MAIN;category=android.intent.category.LAUNCHER;package=com.disney.disneyplus;end">Valid Disney+ app link</a>
     <a href="intent://www.disneyplus.com/series/the-mandalorian/3jLIGr4AdKrq#Intent;scheme=https;package=com.disney.disneyplus;end">Valid Disney+ link to show</a>
     <a href="intent://invalid/#Intent;package=com.disney.disneyplus;end" class="invalid">Invalid Disney+ link without fallback</a>
     <a href="intent://invalid/#Intent;package=com.disney.disneyplus;S.browser_fallback_url=market://details?id=com.disney.disneyplus;end" class="fallback">Invalid Disney+ link WITH Play Store fallback</a>
     <a href="intent://www.disneyplus.com/series/nonexistent/#Intent;scheme=https;package=com.disney.disneyplus;end">Valid Disney+ link with nonexistent show</a>
 
     <h2>Hulu (com.hulu.livingroomplus)</h2>
-    <a href="intent://#Intent;package=com.hulu.livingroomplus;end">Valid Hulu app link</a>
+    <a href="intent:#Intent;action=android.intent.action.MAIN;category=android.intent.category.LAUNCHER;package=com.hulu.livingroomplus;end">Valid Hulu app link</a>
     <a href="intent://www.hulu.com/watch/565d897a-a526-4e9a-8e7c-59a4902f8bac#Intent;scheme=https;package=com.hulu.livingroomplus;end">Valid Hulu link to show</a>
     <a href="intent://invalid/#Intent;package=com.hulu.livingroomplus;end" class="invalid">Invalid Hulu link without fallback</a>
     <a href="intent://invalid/#Intent;package=com.hulu.livingroomplus;S.browser_fallback_url=market://details?id=com.hulu.livingroomplus;end" class="fallback">Invalid Hulu link WITH Play Store fallback</a>
     <a href="intent://www.hulu.com/watch/nonexistent#Intent;scheme=https;package=com.hulu.livingroomplus;end">Valid Hulu link with nonexistent show</a>
 
     <h2>Max (com.wbd.stream)</h2>
-    <a href="intent://#Intent;package=com.wbd.stream;end">Valid Max app link</a>
+    <a href="intent:#Intent;action=android.intent.action.MAIN;category=android.intent.category.LAUNCHER;package=com.wbd.stream;end">Valid Max app link</a>
     <a href="intent://www.max.com/shows/game-of-thrones/123#Intent;scheme=https;package=com.wbd.stream;end">Valid Max link to show</a>
     <a href="intent://invalid/#Intent;package=com.wbd.stream;end" class="invalid">Invalid Max link without fallback</a>
     <a href="intent://invalid/#Intent;package=com.wbd.stream;S.browser_fallback_url=market://details?id=com.wbd.stream;end" class="fallback">Invalid Max link WITH Play Store fallback</a>
@@ -95,6 +95,7 @@
 
 </body>
 </html>
+
 
 
 <hr>
