@@ -12,7 +12,7 @@
 </head>
 <body>
     <h1>Deep Link Examples</h1>
-    <p style="color: #888;">Revision: 2</p>
+    <p style="color: #888;">Revision: 3</p>
 
     <h2>YouTube (com.google.android.youtube.tv)</h2>
     <a href="intent:#Intent;action=android.intent.action.MAIN;category=android.intent.category.LAUNCHER;package=com.google.android.youtube.tv;end">Valid YT app link</a>
@@ -22,12 +22,12 @@
     <a href="intent://blabla/#Intent;scheme=vnd.youtube;package=com.google.android.youtube.tv;S.browser_fallback_url=market://details?id=com.google.android.youtube.tv;end">Valid YT link with nonexistent video</a>
     <a href="vnd.youtube:VI0YaqL68Ik">Alternate: YT video with vnd.youtube: scheme</a>
 
-    <h2>YouTube TV (com.google.android.apps.youtube.unplugged)</h2>
-    <a href="intent:#Intent;action=android.intent.action.MAIN;category=android.intent.category.LAUNCHER;package=com.google.android.apps.youtube.unplugged;end">Valid YouTube TV app link</a>
-    <a href="intent://tv.youtube.com/watch/VI0YaqL68Ik/#Intent;scheme=https;package=com.google.android.apps.youtube.unplugged;end">Valid YouTube TV link to specific video</a>
-    <a href="intent://invalid/#Intent;package=com.google.android.apps.youtube.unplugged;end" class="invalid">Invalid YouTube TV link without fallback</a>
-    <a href="intent://invalid/#Intent;package=com.google.android.apps.youtube.unplugged;S.browser_fallback_url=market://details?id=com.google.android.apps.youtube.unplugged;end" class="fallback">Invalid YouTube TV link WITH Play Store fallback</a>
-    <a href="intent://tv.youtube.com/watch/blabla/#Intent;scheme=https;package=com.google.android.apps.youtube.unplugged;end">Valid YouTube TV link with nonexistent video</a>
+    <h2>YouTube TV (com.google.android.youtube.tvunplugged)</h2>
+    <a href="intent:#Intent;action=android.intent.action.MAIN;category=android.intent.category.LAUNCHER;package=com.google.android.youtube.tvunplugged;end">Valid YouTube TV app link</a>
+    <a href="intent://tv.youtube.com/watch/VI0YaqL68Ik/#Intent;scheme=https;package=com.google.android.youtube.tvunplugged;end">Valid YouTube TV link to specific video</a>
+    <a href="intent://invalid/#Intent;package=com.google.android.youtube.tvunplugged;end" class="invalid">Invalid YouTube TV link without fallback</a>
+    <a href="intent://invalid/#Intent;package=com.google.android.youtube.tvunplugged;S.browser_fallback_url=market://details?id=com.google.android.youtube.tvunplugged;end" class="fallback">Invalid YouTube TV link WITH Play Store fallback</a>
+    <a href="intent://tv.youtube.com/watch/blabla/#Intent;scheme=https;package=com.google.android.youtube.tvunplugged;end">Valid YouTube TV link with nonexistent video</a>
 
     <h2>YouTube Music (com.google.android.youtube.tvmusic)</h2>
     <a href="intent:#Intent;action=android.intent.action.MAIN;category=android.intent.category.LAUNCHER;package=com.google.android.youtube.tvmusic;end">Valid YouTube Music app link</a>
