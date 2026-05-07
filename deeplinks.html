@@ -12,6 +12,7 @@
 </head>
 <body>
     <h1>Deep Link Examples</h1>
+    <p style="color: #888;">Revision: 2</p>
 
     <h2>YouTube (com.google.android.youtube.tv)</h2>
     <a href="intent:#Intent;action=android.intent.action.MAIN;category=android.intent.category.LAUNCHER;package=com.google.android.youtube.tv;end">Valid YT app link</a>
@@ -52,8 +53,8 @@
 
     <h2>Spotify (com.spotify.tv.android)</h2>
     <a href="spotify:">Valid Spotify app link</a>
-    <a href="intent://open.spotify.com/track/4uLU6hMCjMInkwr6HswzAW#Intent;scheme=https;package=com.spotify.tv.android;end">Valid Spotify link to track (https)</a>
-    <a href="intent://open.spotify.com/album/3nzuGtN3nugXQA1snG9qxe#Intent;scheme=https;package=com.spotify.tv.android;end">Valid Spotify link to album (https)</a>
+    <a href="spotify:track:4uLU6hMCjMInkwr6HswzAW">Valid Spotify link to track</a>
+    <a href="spotify:album:3nzuGtN3nugXQA1snG9qxe">Valid Spotify link to album</a>
     <a href="spotify:invalid" class="invalid">Invalid Spotify link without fallback</a>
     <a href="intent://invalid/#Intent;scheme=spotify;package=com.spotify.tv.android;S.browser_fallback_url=market://details?id=com.spotify.tv.android;end" class="fallback">Invalid Spotify link WITH Play Store fallback</a>
     <a href="spotify:track:0000000000000000000000">Valid Spotify link with nonexistent track</a>
