@@ -12,7 +12,7 @@
 </head>
 <body>
     <h1>Deep Link Examples</h1>
-    <p style="color: #888;">Revision: 6</p>
+    <p style="color: #888;">Revision: 7</p>
 
     <h2>YouTube (com.google.android.youtube.tv)</h2>
     <a href="intent:#Intent;action=android.intent.action.MAIN;category=android.intent.category.LAUNCHER;package=com.google.android.youtube.tv;end">Valid YT app link</a>
@@ -68,7 +68,7 @@
     <a href="intent://tv.apple.com/show/nonexistent/umc.cmc.nonexistent#Intent;scheme=https;package=com.apple.atve.androidtv.appletv;end">Valid Apple TV link with nonexistent show</a>
 
     <h2>Prime Video (com.amazon.amazonvideo.livingroom)</h2>
-    <a href="intent:#Intent;action=android.intent.action.MAIN;category=android.intent.category.LEANBACK_LAUNCHER;package=com.amazon.amazonvideo.livingroom;end">Valid Prime Video app link</a>
+    <a href="intent://app.primevideo.com/#Intent;scheme=https;package=com.amazon.amazonvideo.livingroom;end">Valid Prime Video app link (https)</a>
     <a href="intent://app.primevideo.com/detail?asin=B08K1N1S11#Intent;scheme=https;package=com.amazon.amazonvideo.livingroom;end">Valid Prime Video link to video (https)</a>
     <a href="intent://invalid/#Intent;package=com.amazon.amazonvideo.livingroom;end" class="invalid">Invalid Prime Video link without fallback</a>
     <a href="intent://invalid/#Intent;package=com.amazon.amazonvideo.livingroom;S.browser_fallback_url=market://details?id=com.amazon.amazonvideo.livingroom;end" class="fallback">Invalid Prime Video link WITH Play Store fallback</a>
@@ -89,7 +89,7 @@
     <a href="intent://www.hulu.com/watch/nonexistent#Intent;scheme=https;package=com.hulu.livingroomplus;end">Valid Hulu link with nonexistent show</a>
 
     <h2>Max (com.wbd.stream)</h2>
-    <a href="intent:#Intent;action=android.intent.action.MAIN;category=android.intent.category.LEANBACK_LAUNCHER;package=com.wbd.stream;end">Valid Max app link</a>
+    <a href="intent://www.max.com/#Intent;scheme=https;package=com.wbd.stream;end">Valid Max app link (https)</a>
     <a href="intent://www.max.com/shows/game-of-thrones/123#Intent;scheme=https;package=com.wbd.stream;end">Valid Max link to show</a>
     <a href="intent://invalid/#Intent;package=com.wbd.stream;end" class="invalid">Invalid Max link without fallback</a>
     <a href="intent://invalid/#Intent;package=com.wbd.stream;S.browser_fallback_url=market://details?id=com.wbd.stream;end" class="fallback">Invalid Max link WITH Play Store fallback</a>
@@ -97,6 +97,7 @@
 
 </body>
 </html>
+
 
 
 
